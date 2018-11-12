@@ -44,3 +44,8 @@ From Wikipedia:
 - Your client will want to charge everybody the same price for the same product
 - Your client will want to charge everybody in the same currency
 - Your client understands the tax and accounting implications of working with foreign currency
+- You understand the tax and accounting implications of working with foreign currency
+
+### Professional Expertise
+
+I always recommend having a Certified Public Accountant (CPA) review the flow of funds through any payment procession system before going live. Small mistakes in payment processing can create huge liabilities for a business. This is especially important for platform-type projects.
