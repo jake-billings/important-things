@@ -55,6 +55,8 @@ This approach drastically reduces the overhead on the frontend. It doesn't need 
 - Every currency symbol is a single UTF-8 character
 - Every currency has a unique symbol
 - Every currency people use is listed in ISO 4217
+- Bitcoin is not listed in your ISO 4217 library
+- Bitcoin is ISO 4217 approved
 - Every business uses the currency of the government where it operates
 - Every displayed currency value should be followed by two decimal places
 - Every browser supports every currency symbol
