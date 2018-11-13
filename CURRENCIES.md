@@ -23,12 +23,28 @@ From Wikipedia:
 |Number    |A 3-Digit Number                |840    |A unique code that identifies the currency                          |
 |E/Fraction|An integer                      |2      |The number of digits typically displayed after the decimal separator|
 
+Note that ISO 4217 standardizes _currency codes_ *not* _country codes_. Country codes are standardized by [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1).
+
+Country code and currency code must be separate fields in a database if both must be stored.
+
+### JSON List of Currencies
+
+After some research, I found this npm package, which provides a list of currencies and symbols in JSON. I like this one the best. It has regular downloads and multiple contributors.
+
+https://www.npmjs.com/package/currency-format
+
+If you're using this in the future, make sure that active contributions are still being made.
+
 ### Falsehoods about Currencies
 
 - Everybody uses the United States Dollar
 - Every country issues its own currency
 - Every country uses the currency its government issues
 - Every currency is issued by a government
+- Every currency expects the money symbol on the left-hand side of the quantity
+- Every currency symbol is a single UTF-8 character
+- Every currency has a unique symbol
+- Every currency people use is listed in ISO 4217
 - Every business uses the currency of the government where it operates
 - Every displayed currency value should be followed by two decimal places
 - Every browser supports every currency symbol
@@ -45,6 +61,7 @@ From Wikipedia:
 - Your client will want to charge everybody in the same currency
 - Your client understands the tax and accounting implications of working with foreign currency
 - You understand the tax and accounting implications of working with foreign currency
+- Your currency data/library is up-to-date with the real world
 
 ### Professional Expertise
 
