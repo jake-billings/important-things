@@ -35,6 +35,16 @@ https://www.npmjs.com/package/currency-format
 
 If you're using this in the future, make sure that active contributions are still being made.
 
+### Possible Model for Rendering Currencies
+
+- Host a REST endpoint on your backend similar to `/api/currencies/:currencyCode`.
+- Build a view component that accepts two parameters `currencyCode` and `currencyQuantity`. Alternatively, you could have a `price` type with those two fields.
+
+The view component is responsible for loading metadata about the currency code and using it to render `currencyQuantity` as the proper quantity.
+
+This approach drastically reduces the overhead on the frontend. It doesn't need to store a currency database. However, it requires an easily-cached REST request every time you render a currency.
+
+
 ### Falsehoods about Currencies
 
 - Everybody uses the United States Dollar
