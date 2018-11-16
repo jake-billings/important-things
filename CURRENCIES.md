@@ -27,6 +27,18 @@ Note that ISO 4217 standardizes _currency codes_ *not* _country codes_. Country 
 
 Country code and currency code must be separate fields in a database if both must be stored.
 
+### A Few  Example Country and Currency Codes
+
+| Country Name  | ISO 3166-1 Country Code for Stripe | ISO 4217 Currency Code |
+|---------------|------------------------------------|------------------------|
+| United States | US                                 | USD                    |
+| Singapore     | SG                                 | SGD                    |
+| Canada        | CA                                 | CAD                    |
+| Japan         | JP                                 | JPY                    |
+| Mexico        | MX                                 | MXN                    |
+| More          | [ISO 3166-1 Country Codes](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)| [ISO 4217 Currency Codes](https://en.wikipedia.org/wiki/ISO_4217#Active_codes)|
+
+
 ### JSON List of Currencies
 
 After some research, I found this npm package, which provides a list of currencies and symbols in JSON. I like this one the best. It has regular downloads and multiple contributors.
